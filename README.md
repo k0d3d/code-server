@@ -7,6 +7,12 @@
 
 `code-server` is [VS Code](https://github.com/Microsoft/vscode) running on a remote server, accessible through the browser.
 
+# Support for PHP7.3 and Custom User Dir
+- Implement support for PHP7.3, XDebug and Linting
+- Mounted --user-dir outside of project workspace
+* Use location path to navigate to Workspace sub-folder ( coming soon )
+- Fix black Terminal on Ubuntu 18.04
+
 Try it out:
 ```bash
 docker run -it -p 127.0.0.1:8443:8443 -v "${PWD}:/home/coder/project" codercom/code-server --allow-http --no-auth
