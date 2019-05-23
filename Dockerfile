@@ -19,6 +19,8 @@ RUN yarn && NODE_ENV=production yarn task build:server:binary
 FROM ubuntu:18.04
 
 ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Africa/Lagos
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt-get update && apt-get install -y \
 	openssl \
@@ -30,9 +32,10 @@ RUN apt-get update && apt-get install -y \
 	vim \
 	curl \
 	software-properties-common \
+	php \
+	python \
 	wget
 
-RUN add-apt-repository -y ppa:ondrej/php && apt-get update && apt-get install -y php7.3
 
 RUN locale-gen en_US.UTF-8
 # We unfortunately cannot use update-locale because docker will not use the env variables
