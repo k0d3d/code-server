@@ -13,6 +13,7 @@
 - Yarn
 - Python
 - NVM
+- Nano
 
 Try it out:
 ```bash
