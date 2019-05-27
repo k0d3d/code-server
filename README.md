@@ -14,6 +14,8 @@
 - Python
 - NVM
 - Nano
+- Screen
+
 
 Try it out:
 ```bash
