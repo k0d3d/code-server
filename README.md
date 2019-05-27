@@ -6,12 +6,15 @@
 [![Discord](https://img.shields.io/discord/463752820026376202.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/zxSwN8Z)
 
 `code-server` is [VS Code](https://github.com/Microsoft/vscode) running on a remote server, accessible through the browser.
-
-# Support for PHP7.3 and Custom User Dir
+## TODO
+# Support for PHP7.3
 - Implement support for PHP7.3, XDebug and Linting
 - Mounted --user-dir outside of project workspace
 * Use location path to navigate to Workspace sub-folder ( coming soon )
 - Fix black Terminal on Ubuntu 18.04
+- Yarn
+- Python
+- NVM
 
 Try it out:
 ```bash
