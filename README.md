@@ -9,8 +9,6 @@
 ## TODO
 # Support for PHP7.3
 - Implement support for PHP7.3, XDebug and Linting
-- Mounted --user-dir outside of project workspace
-* Use location path to navigate to Workspace sub-folder ( coming soon )
 - Fix black Terminal on Ubuntu 18.04
 - Yarn
 - Python
